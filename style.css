@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+/* font-family: 'Red Hat Display', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+}
+.container{
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+}
+.bgc-hero{
+    background-image: url(images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    border-radius: 20px 20px 0 0;
+}
+.description{
+    text-align: center;
+    padding: 2.5em 0;
+}
+.description h1 {
+    font-weight: 900;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+}
+.description p{
+    color: #777;
+    line-height: 1.4em;
+    padding: 0 2em;
+}
+.aPlan{
+    display: grid;
+    grid-template-columns: repeat(3 1fr) ;
+    text-align: center;
+    margin-bottom: 2em;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1em 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 10px;
+}
+.note{
+    grid-column: 1/2;
+    justify-self: end;
+}
+.aaPlan{
+    grid-column: 2/3;
+    justify-content: center;
+}
+.aaPlan h2{
+    font-size: 1.1em;
+}
+.aaPlan p{
+    color: #777;
+    padding-top: 0.3em;
+}
+.change{
+    grid-column: 3/4;
+    align-self: center;
+}
+.change:hover{
+    color: #777;
+    text-decoration: none;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.btn{
+    padding: 1em 3em;
+    margin: 0 auto;
+    cursor: pointer;
+    font-weight: bold;
+}
+.blue{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.07em;
+    outline: none;
+    border: none;
+}
+.blue:hover{
+    background-color:hsl(224, 23%, 55%) ;
+}
+.scnd{
+    color: #777;
+}
+.wrapper{
+    margin: 4em 1.5em;
+}
+footer{
+    padding: 2em;
+}
+footer p,h1{
+    text-align: center;
+}
+footer h1{
+    font-size: 1em;
+}
+@media(min-width:376px){
+   body{
+       max-width: 375px;
+       margin: 0 auto;
+   }
+}
